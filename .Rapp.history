@@ -1,0 +1,436 @@
+x <- c(1, 3, 4, 5, 6)#
+y <- c(4, 7, 2, 1, 6)#
+plot(x, y)
+print(c(1 < 2, 3 > 2, 2 == 2, 3 != 2)
+x<-1:4
+lapply(x,runif)
+lapply(x,runif, min=0,max=10)
+n
+str(apply)
+x <- matrix (rnorm(200), 20, 10)
+apply(x, 1, quantile, probs = c(0.25, 0.75))
+a <- array (rnorm( 2* 2*10), c(2,2,10))
+apply(a, c(1,2), mean)
+rowMeans(a, dims=2)
+printmessage <- function(x) {}
+printmessage <- function(x) {
+if (x >0)
+print ('x is greater than zero')
+else
+print ('x is less than or equal to zero')
+invisible(x)
+}
+pringtmessage (1)
+printmessage(1)
+printmessage(0)
+printmessage(NA)
+## Put comments here that give an overall description of what your#
+## functions do#
+#
+## Write a short comment describing this function#
+#
+makeCacheMatrix <- function(x = matrix()) {#
+#
+}#
+## Write a short comment describing this function#
+#
+cacheSolve <- function(x, ...) {#
+        ## Return a matrix that is the inverse of 'x'#
+}
+library (datasets)
+data (iris)
+summary (iris)
+round(mean(iris[which(iris$Species == "virginica"),]$Sepal.Length))
+mean(iris[which(iris$Species == "virginica"),]$Sepal.Length)
+makeCacheMatrix <- function(x = matrix()) {#
+  m<-NULL#
+  set<-function(y){#
+  x<<-y#
+  m<<-NULL#
+}#
+get<-function() x#
+setmatrix<-function(solve) m<<- solve#
+getmatrix<-function() m#
+list(set=set, get=get,#
+   setmatrix=setmatrix,#
+   getmatrix=getmatrix)#
+}#
+#
+cacheSolve <- function(x=matrix(), ...) {#
+    m<-x$getmatrix()#
+    if(!is.null(m)){#
+      message("getting cached data")#
+      return(m)#
+    }#
+    matrix<-x$get#
+    m<-solve(matrix, ...)#
+    x$setmatrix(m)#
+    m#
+}
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set <- function (y) {#
+		x <<- y#
+		m <<-NULL#
+	}#
+	get <- function () x#
+	setmatrix <- function (inverse) m#
+	getmatrix <- function() m#
+	list(set = set, get = get,#
+		setmatrix = setmatrix,#
+		getmatrix = getmatrix)
+B <- matrix (c (1,2,3,4,), 2,2)
+B1 <- makeCacheMatrix (B)
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set <- function (y) {#
+		x <<- y#
+		m <<-NULL#
+	}#
+	get <- function () x#
+	setmatrix <- function (inverse) m#
+	getmatrix <- function() m#
+	list(set = set, get = get,#
+		setmatrix = setmatrix,#
+		getmatrix = getmatrix)#
+#
+cachematrix <- function( x, …) {#
+	m <- x$getmatrix()#
+	if ( !is.null(m)) {#
+		message (“getting cached data”)#
+		return (m)#
+	}#
+	data <- x$get()#
+        m <- inverse (data, …)#
+	x$setmatrix(m)#
+	m#
+}#
+#
+ B <- matrix (c (1,2,3,4,), 2,2)#
+B1 <- makeCacheMatrix (B)
+makeCacheMatrix <- function (x = matrix () ) {
+m <- NULL#
+	set <- function (y) {#
+		x <<- y#
+		m <<-NULL#
+	}
+get <- function () x#
+	setmatrix <- function (inverse) m#
+	getmatrix <- function() m#
+	list(set = set, get = get,#
+		setmatrix = setmatrix,#
+		getmatrix = getmatrix)
+cachematrix <- function( x, …) {#
+	m <- x$getmatrix()#
+	if ( !is.null(m)) {#
+		message (“getting cached data”)#
+		return (m)
+get <- function () x#
+	setmatrix <- function (inverse) m#
+	getmatrix <- function() m#
+	list(set = set, get = get, setmatrix = setmatrix, getmatrix = getmatrix)
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set <- function (y) {#
+		x <<- y#
+		m <<-NULL#
+	}#
+	get <- function () x#
+	setmatrix <- function (inverse) m#
+	getmatrix <- function() m#
+	list(set = set, get = get, setmatrix = setmatrix, getmatrix = getmatrix)#
+#
+cachematrix <- function( x, …) {#
+	m <- x$getmatrix()#
+	if ( !is.null(m)) {#
+		message (“getting cached data”)#
+		return (m)
+inverse (x)
+x <- 3
+inverse
+inverse (x)
+matrix (1:4,2,2)
+inverse(x)
+inverse
+x<-matrix (1:4,2,2)
+inverse(x)
+solve(x)
+y<-solve (x)
+y
+x*y
+y*x
+x**y
+y**x
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set <- function (y) {#
+		x <<- y#
+		m <<-NULL#
+	}#
+	get <- function () x#
+	setmatrix <- function (inverse) m#
+	getmatrix <- function() m#
+	list(set = set, get = get, setmatrix = setmatrix, getmatrix = getmatrix)#
+#
+cachematrix <- solve () {#
+	m <- x$getmatrix()#
+	if ( !is.null(m)) {#
+		message (“getting cached data”)#
+		return (m)#
+	}#
+	data <- x$get()#
+        m <- solve(x)#
+	x$setmatrix(m)#
+	m#
+}#
+#
+ B <- matrix (c (1,2,3,4,), 2,2)#
+B1 <- makeCacheMatrix (B)
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set <- function (y) {#
+		x <<- y#
+		m <<-NULL#
+	}
+get <- matrix () x#
+	setmatrix <- function (solve) m#
+	getmatrix <- function() m#
+	list(set = set, get = get, setmatrix = setmatrix, getmatrix = getmatrix)
+swirl
+library ("swirl")
+swirl()
+head(flags)
+dim(flags)
+class(flags)
+lapply(flags, class)
+cls_list <- lapply (flags, class)
+cls_list
+class(cls_list)
+as.character(cls,list)
+as.character(cls_list)
+sapply()
+sapply(FUN)
+?sapply
+done
+?sapply
+sapply(X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE)
+sapply(X, FUN, cls_list, simplify = TRUE, USE.NAMES = TRUE)
+swirl()
+makeCacheMatrix <- function (x = matrix () ) {#
+	setmatrix <- function (y) {#
+		x <<- y#
+		inv <<-NULL#
+	}
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set<- function (y) {#
+		x <<- y#
+		inv <<-NULL#
+	}#
+#
+	get <- function () x#
+	setinv <- function (inverse) m <<-inverse#
+	getinv <- function() m#
+	list(set = set, get = get, setinv = setinv, getinv = getinv)#
+#
+cachematrix <- solve () {#
+	m <- x$getinv()#
+	if ( !is.null(m)) {#
+		message (“getting cached data”)#
+		return (m)#
+	}#
+	data <- x$get()#
+        m <- solve(x)#
+	x$setinv(m)#
+	m#
+}
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set<- function (y) {#
+		x <<- y#
+		inv <<-NULL#
+	}#
+#
+	get <- function () x#
+	setinv <- function (inverse) m <<-inverse#
+	getinv <- function() m#
+	list(set = set, get = get, setinv = setinv, getinv = getinv)
+cachematrix <- solve () {
+cachematrix <- function (x) {
+m <- x$getinv()
+if ( !is.null(m)) {
+message (“getting cached data”)#
+		return (m)
+message (“getting cached data”)
+message("getting cached data")
+return (m)
+m <- x$getinv()
+m <- NULL#
++ 	set<- function (y) {#
++ 		x <<- y#
++ 		inv <<-NULL#
++ 	}#
++ #
++ 	get <- function () x#
++ 	setinv <- function (inverse) m <<-inverse#
++ 	getinv <- function() m#
++ 	list(set = set, get = get, setinv = setinv, getinv = getinv)
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set<- function (y) {#
+		x <<- y#
+		inv <<-NULL#
+	}#
+#
+	get <- function () x#
+	setinv <- function (inverse) m <<-inverse#
+	getinv <- function() m#
+	list(set = set, get = get, setinv = setinv, getinv = getinv)
+cachematrix <- function (x) {#
+	m <- x$getinv()#
+	if ( !is.null(m)) { message (“getting cached data”)#
+                       return (m)}
+cachematrix <- function (x) {#
+	m <- x$getinv()#
+	if ( !is.null(m)) { message ("getting cached data")#
+                       return (m)}
+data <- x$get()#
+    m <- solve(x)#
+	x$setinv(m)#
+	m
+}
+B <- matrix (c(1,2,3,4),2,2)
+B1 <- makeCacheMatrix (B)
+cacheSolve (B1)
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set<- function (y) {#
+		x <<- y#
+		inv <<-NULL#
+	}#
+#
+	get <- function () x#
+	setinv <- function (inverse) m <<-inverse#
+	getinv <- function() m#
+	list(set = set, get = get, setinv = setinv, getinv = getinv)#
+#
+cachematrix <- function (x) {#
+	m <- x$getinv()#
+	if ( !is.null(m)) {#
+		message ("getting cached data")#
+		return (m)#
+	}#
+	data <- x$get()#
+        m <- solve(x)#
+	x$setinv(m)#
+	m#
+}
+x<-matrix(1:4,2,2)
+y<-makeCacheMatrix(x)
+y
+z<-cachematrix(x)
+z
+x <- matrix(1:4,2,2)
+x
+makeCacheMatrix <- function (x = matrix () ) {#
+	m <- NULL#
+	set<- function (y) {#
+		x <<- y#
+		inv <<-NULL#
+	}#
+#
+	get <- function () x#
+	setinv <- function (inverse) m <<-inverse#
+	getinv <- function() m#
+	list(set = set, get = get, setinv = setinv, getinv = getinv)#
+}
+cacheSolve <- function (x) {#
+	m <- x$getinv()#
+	if ( !is.null(m)) {#
+		message ("getting cached data")#
+		return (m)#
+	}#
+	data <- x$get()#
+        m <- solve(x)#
+	x$setinv(m)#
+	m#
+}
+x <- matrix(1:4,2,2)
+x
+CacheMatrix <- makeCacheMatrix(x)
+CacheMatrix$getinv()
+CacheMatrix$get()
+cacheSolve(CacheMatrix)
+cacheSolve(x)
+cacheSolve <- function (x) {#
+	m <- x$getinv()#
+	if ( !is.null(m)) {#
+		message ("getting cached data")#
+		return (m)#
+	}#
+	data <- x$get()#
+        m <- solve(data)#
+	x$setinv(m)#
+	m#
+}
+x
+cacheSolve(x)
+cacheSolve(CacheMatrix)
+y <- cacheSolve(CacheMatrix)
+y
+cacheMatrix$get()
+CacheMatrix$get()
+CacheMatrix$getinv()
+cachematrix.r
+cachematrix.R()
+source(cachematrix.r)
+source(cachematrix.r)
+source(cachematrix.R)
+source("cachematrix.R")
+source("cachematrix.R")
+source("cachematrix.R")
+source("cachematrix.R")
+x<- matrix(1:9,3,3)
+x
+lala<-makeCacheMatrix (x)
+source("cachematrix.R")
+x<- matrix(1:9,3,3)
+lala<-makeCacheMatrix (x)
+makeCacheMatrix <- function(x = matrix()) {#
+	m <- NULL#
++ 	set<- function (y) #
+	{x <<- y#
++ 		inv <<-NULL }#
++ #
++ 	get <- function () x#
++ 	setinv <- function (inverse) m <<-inverse#
++ 	getinv <- function() m#
++ 	list(set = set, get = get, setinv = setinv, getinv = getinv)#
+}
+lala<-makeCacheMatrix (x)
+lala<-makeCacheMatrix(x)
+source("cachematrix.R")
+lala<-makeCacheMatrix(x)
+lala$get()
+lala$getinv()
+cacheSolve<-makeCacheMatrix(x)
+cacheSolve
+lala$getinv()
+nono<-cacheSolve(x)
+source("cachematrix.R")
+lala<-makeCacheMatrix(x)
+lala$getinv()
+nono<-cacheSolve(x)
+source("cachematrix.R")
+lala$getinv()
+nono<-cacheSolve(x)
+nono<-cacheSolve(lala)
+nono<-cacheSolve(lala)
+x<-(4:7,2,2)
+x<-matrix(4:7,2,2)
+nono<-makeCacheMatrix(x)
+nono$get()
+nono$getinv()
+lala<-cacheSolve(nono)
+lala
+nono$getinv()
