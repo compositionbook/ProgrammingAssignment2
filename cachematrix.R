@@ -15,7 +15,7 @@
  	list(set = set, get = get, setinv = setinv, getinv = getinv)
  }
  
-## this cacheSolve function conputes the inverse of the special matrix returned by makeCacheMatrix. 
+## this cacheSolve function computes the inverse of the special matrix returned by makeCacheMatrix. 
 ## if the inverse has already been calculated (and the matrix has not changed), then cacheSolve will retrieve the inverse from the cache.
  
  cacheSolve <- function (x) {   ## define a new function
